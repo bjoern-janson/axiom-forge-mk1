@@ -1,0 +1,18 @@
+experiment:
+  name: reca_vs_baseline
+  seed: 42
+  episodes: 1000
+
+environment:
+  type: grid_world
+  size: 10
+  perturbation_frequency: 100
+
+agent:
+  memory_size: 100
+  mutation_rate: 0.1
+  consolidation_rate: 0.5
+
+metrics:
+  viability_window: 50
+  measure_interval: 10
