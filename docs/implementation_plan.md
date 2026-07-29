@@ -33,42 +33,46 @@ The software architecture should therefore expose and measure:
 
 # 1. Repository Architecture
 
-The Mk1 implementation:
+# 1. Repository Architecture
 
+The Mk1 implementation is organized as follows:
+
+```text
 Axiom-Forge-Mk1/
-
-src/
-
-├── agents/
-│ ├── base_agent.py
-│ ├── optimizer.py
-│ ├── learner.py
-│ ├── meta_agent.py
-│ └── reca_agent.py
 │
-├── environments/
-│ ├── base_environment.py
-│ ├── grid_world.py
-│ ├── distribution_shift.py
-│ ├── resource_constraint.py
-│ └── novelty_tasks.py
-│
-├── metrics/
-│ ├── capability.py
-│ ├── recursion.py
-│ ├── selection.py
-│ ├── consolidation.py
-│ └── viability.py
-│
-├── experiments/
-│ ├── baseline_comparison.py
-│ ├── perturbation_test.py
-│ └── long_horizon_test.py
-│
-└── configs/
-├── environments.yaml
-├── agents.yaml
-└── experiments.yaml
+├── src/
+│   │
+│   ├── agents/
+│   │   ├── base_agent.py
+│   │   ├── optimizer.py
+│   │   ├── learner.py
+│   │   ├── meta_agent.py
+│   │   └── reca_agent.py
+│   │
+│   ├── environments/
+│   │   ├── base_environment.py
+│   │   ├── grid_world.py
+│   │   ├── distribution_shift.py
+│   │   ├── resource_constraint.py
+│   │   └── novelty_tasks.py
+│   │
+│   ├── metrics/
+│   │   ├── capability.py
+│   │   ├── recursion.py
+│   │   ├── selection.py
+│   │   ├── consolidation.py
+│   │   └── viability.py
+│   │
+│   ├── experiments/
+│   │   ├── baseline_comparison.py
+│   │   ├── perturbation_test.py
+│   │   └── long_horizon_test.py
+│   │
+│   └── configs/
+│       ├── environments.yaml
+│       ├── agents.yaml
+│       └── experiments.yaml
+```
 
 ---
 
